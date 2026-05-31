@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_loans
+    description: "Cleaned staging table for motorcycle loans"
+
+    columns:
+      - name: loan_id
+        description: "Unique identifier for each loan"
+        tests:
+          - not_null
+          - unique
+
+      - name: subscription_id
+        description: "Customer subscription identifier"
+        tests:
+          - not_null
+
+      - name: annual_rate
+        description: "Annual interest rate"
+
+      - name: financed_amount
+        description: "Total financed amount"
+
+      - name: monthly_income
+        description: "Customer monthly income"
+
+      - name: disbursement_date
+        description: "Loan disbursement date"
+
+      - name: loan_due_date
+        description: "Loan due date"

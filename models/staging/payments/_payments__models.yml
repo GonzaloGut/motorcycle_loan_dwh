@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_payment_schedule
+    description: "Cleaned staging table for loan payment schedules"
+
+    columns:
+      - name: payment_id
+        description: "Unique identifier for payment schedule row"
+        tests:
+          - not_null
+          - unique
+
+      - name: loan_id
+        description: "Associated loan identifier"
+        tests:
+          - not_null
+        relationships:
+          - to: ref('stg_loans')
+          - field: loan_id
+
+      - name: period
+        description: "Installment number"
+
+      - name: total_pay
+        description: "Expected payment amount"
+
+      - name: total_paid
+        description: "Actual paid amount"
