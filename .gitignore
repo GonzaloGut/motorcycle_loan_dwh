@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Environment files
+.env
+
+# Secrets / credentials
+*.json
+sa1_key_JSON.json
+
+# dbt local profiles
+profiles.yml
