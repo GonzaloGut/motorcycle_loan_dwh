@@ -19,6 +19,14 @@ aggregated AS (
         financed_amount,
         capital_balance,
         monthly_income,
+        
+        -- Customer income classification derived from reported monthly income levels.
+        CASE
+            WHEN monthly_income < 1000 THEN 'Low Income'
+            WHEN monthly_income < 3000 THEN 'Middle Income'
+            ELSE 'High Income'
+        END AS income_segment,
+
         motorcycle_value,
 
         disbursement_date,
