@@ -14,6 +14,13 @@ The project includes:
 
 ---
 
+## 🔗 Quick Links
+
+* 📊 [Looker Studio Dashboard](https://datastudio.google.com/reporting/33dea1d8-5e41-4f65-b832-c269077344b6)
+* 📖 [Medium Article](https://medium.com/@gonzaloglr23/building-an-end-to-end-analytics-engineering-pipeline-with-dbt-bigquery-and-looker-studio-3a4c4931fb8e)
+
+---
+
 # Architecture
 
 ```text
